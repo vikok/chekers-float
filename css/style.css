@@ -1,17 +1,73 @@
 body{
-
+		background: url(../img/bg.ipg.jpeg);
 }
 
 
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1200px;
+	max-width: 100%;
+	padding: 20px 0 20px;
+}
+
+.ba-board {
+	width: 50vw;
+	height: 50vw;
+	border: 20px solid #fff;
+	background: #fff;
+}
+
+.ba-desk {
+    margin: auto;
+    width: 600px;
+	height: 600px;
+	border: 2px solid #bda587;
+}
+
+.ba-dark {
+	width: 100%;
+	height: 50%;
+	float: left;
+}
+
+.ba-white {
+	width: 100%;
+	height: 50%;
+	float: left;
+}
+
+.ba-row {
+	height: 25%;
+	width: 100%;
+
+}
+
+.ba-cell {
+	float: left;
+	width: 12.5%;
+	background: #B1AEB0;
+	padding: 5px;
+	height: 25%;
+
 }
 
 
+.ba-cell:nth-child(2n) {
+	background: #FFF;
+}
+
+.ba-row:nth-child(odd) {
+	background: #FFF;
+}
+.ba-row:nth-child(even) .ba-cell:nth-child(odd) {
+	background: #fff;
+}
+.ba-row:nth-child(even) .ba-cell:nth-child(even) {
+	background: #76101B;
+}
+.ba-row:nth-child(odd) .ba-cell:nth-child(odd) {
+	background: #76101B;
+}
 
 /* Typography */
 a,
